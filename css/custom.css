@@ -51,7 +51,7 @@ h3 {
 @media screen and (max-width:767px) {
 	#bannerContainer p {
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	p {
 		font-size: 1em;

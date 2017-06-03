@@ -3,10 +3,11 @@ body {
 	background-color: #f2f2f2;
 }
 
-#bannerContainer,#mobileFooter {
+#bannerContainer {
 	background-color: #5f9ea0;
-	padding: 15px;
+	padding: 0;
 	color: #f0f8ff;
+	text-align: center;
 }
 #bannerContainer a,#bannerContainer a:hover {
 	color: inherit;
@@ -22,9 +23,6 @@ body {
 }
 #keySkills p:hover {
 	color: #000000;
-}
-h1, h2 {
-	text-align: center;
 }
 h2 {
 	font-size: 1em;
@@ -47,30 +45,14 @@ h3 {
 	background-color: #5f9ea0;
 	color:#FFFFFF;
 }
-
-@media screen and (max-width:767px) {
-	#bannerContainer p {
-		text-align: center;
-		font-size: 1em;
-	}
-	p {
-		font-size: 1em;
-		text-align: center;
-	}
-	.textBackground p {
-		text-align: left;
-	}
-	h2,h3 {
-		font-size: 1.75em;
-		text-align: center;
-	}
+.btn {
+	background-color: #e5901a;
+	color: #FFFFFF;
+	text-shadow: none;
 }
 
-@media screen and (min-width:768px) {
-	h1 {
-		text-align: left;
-	}
-	#bannerContainer h1{
-		padding-top: 20px;
+@media screen and (max-width:768px) {
+	.btn {
+		margin-bottom:20px;
 	}
 }

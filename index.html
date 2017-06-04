@@ -53,26 +53,42 @@
         <img class="img-responsive flushRight" width="678" src="images/htmlImageSmall.jpg">
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="navRow">
       <div class="col-xs-12 col-sm-3">
         <h3 id="currentRole">Current Role</h3>
-        <p> <a href="#dataProcessing" id="dataProcessingLink">Data Processing</a>
-          <p>
-            <p>
-              <a href="#vdpDocumentSetup" id="vdpDocumentSetupLink">VDP Document Setup</a>
-            </p>
-            <p> <a href="#edmCampaigns" id="edmCampaignsLink">eDM Campaigns</a>
-            </p>
-            <p> <a href="#smsCampaigns" id="smsCampaignsLink">SMS Campaigns</a>
-            </p>
-            <p> <a href="#multichannelCampaigns" id="multichannelCampaignsLink">Multi Channel Campaigns</a>
-            </p>
+        <ul>
+          <li>
+            <a href="#dataProcessing" id="dataProcessingLink">Data Processing</a>
+          </li>
+          <li>
+            <a href="#vdpDocumentSetup" id="vdpDocumentSetupLink">VDP Document Setup</a>
+          </li>
+          <li>
+            <a href="#edmCampaigns" id="edmCampaignsLink">eDM Campaigns</a>
+          </li>
+          <li>
+            <a href="#smsCampaigns" id="smsCampaignsLink">SMS Campaigns</a>
+          </li>
+          <li>
+            <a href="#multichannelCampaigns" id="multichannelCampaignsLink">Multi Channel Campaigns</a>
+          </li>
+
+        </ul>
       </div>
       <div class="col-xs-12 col-sm-3">
         <h3 id="previousRoles">Previous Roles</h3>
-        <p><a href="#technicalDocumentSetup" id="#technicalDocumentSetupLink">Technical and Long Document Setup</a></p>
-        <p><a href="#bookDesign" id="#bookDesignLink">Book Design and Production</a></p>
-        <p><a href="#posDesign" id="#posDesignLink">Point of Sale Design</a></p>
+        <ul>
+          <li>
+            <a href="#technicalDocumentSetup" id="#technicalDocumentSetupLink">Technical and Long Document Setup</a>
+
+          </li>
+          <li>
+            <a href="#bookDesign" id="#bookDesignLink">Book Design and Production</a>
+          </li>
+          <li>
+            <a href="#posDesign" id="#posDesignLink">Point of Sale Design</a>
+          </li>
+        </ul>
       </div>
       <div class="col-xs-12 col-sm-6">
         <h3 id="generalInformation">General Information</h3>
@@ -82,7 +98,29 @@
 
       </div>
     </div>
-    <!--container-->
+    <div class="row">
+      <div class="col-sm-6">
+                    <h3>Data Processing</h1>
+            <p>
+              Coming from a pre-press/graphic design background, databases and associated technologies has been an exciting step in a new
+              direction for me. I find that it appeals to the logical side of my nature, and it is very rewarding to program
+              queries that will clean and process large amounts of data very quickly.
+            </p>
+            <p>When any of the elements of a DM campaign are to be mailed, the first step is to clean the data so that it complies
+              with NZ Post standards. I import supplied data files into Access where I merge then if necessary and add standard
+              DM fields. I populate the DM fields using using SQL queries which I order and save in case the data is resupplied
+              for any reason. The queries perform tasks such as splitting addresses on commas, checking/flagging overseas
+              records, extracting postcodes, de-duping, processing for SOA, mailcasing, flagging GNA records, splitting out
+              into runs/batches and postcode sorting. Access is a good tool, but for large databases I would prefer to use
+              the power of SQL Server. With this in mind, I'm working towards using C# to create a data processing application
+              which will interface directly with SQL Server and guide the user through the steps necessary to import and
+              standardise data.
+            </p>
+  
+      </div>
+    </div>
+  </div>
+  <!--container-->
 </body>
 
 </html>

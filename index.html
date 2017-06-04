@@ -2,8 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Malcolm Whild</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
@@ -16,161 +18,71 @@
 
 <body>
   <div class="container">
-    <div id="bannerContainer">
-      <div class="row">
-        <div class="hidden-xs col-sm-4 col-md-3 col-lg-2"> <img class="img-responsive" src="images/profilePic2.jpg"> </div>
-        <div class="col-sm-8 col-lg-3">
-          <h1>Malcolm Whild</h1>
-          <p><span class="jobTitle">XMPie Multichannel Developer</span></p>
-         <!-- <p><b>email:</b> <a href="mailto:malcolm.whild@gmail.com">malcolm.whild@gmail.com</a></p>
-          <p><b>phone:</b> <a href="tel">021 048 4200</a></p>-->
-        </div>
-        <div class="col-lg-7 hidden-xs hidden-sm hidden-md">
-          <img class="img-responsive" src="images/htmlImage.jpg">
-        </div>
-        <div class="col-sm-3 hidden-xs returnToKeySkills">
-          <a class="btn btn-default btn-block returnXS">RETURN TO MAIN</a>
-        </div>
+    <div class="row" id="bannerContainer">
+      <div class="hidden-xs col-sm-4 col-md-3 hidden-lg flushLeft">
+        <img class="img-responsive" src="images/profilePic2.jpg">
+      </div>
+      <div class="hidden-xs hidden-sm hidden-md col-lg-3 flushLeft">
+        <img class="img-responsive" src="images/profilePic2Large.jpg">
+      </div>
+      <div class="col-sm-8 col-md-9 col-lg-3">
+        <h1>Malcolm Whild</h1>
+        <p><span class="jobTitle">XMPie Multichannel Developer</span></p>
+      </div>
+      <div class="hidden-xs hidden-sm hidden-md col-lg-6 flushRight">
+        <img src="images/htmlImage.jpg" height="278">
       </div>
     </div>
     <div class="row">
-      <div class="hidden-sm hidden-md hidden-lg returnToKeySkills" style="text-align:center;">
-        <a class="btn btn-default btn-block returnXS">RETURN TO MAIN</a>
+      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+        <a class="btn btn-default btn-lg btn-block" href="#currentRole" role="button">CURRENT ROLE</a>
       </div>
     </div>
-    <section id="keySkills">
-      <div class="row">
-        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-          <a class="btn btn-default btn-lg btn-block" href="#" role="button">CURRENT ROLE</a>
-        </div>
+    <div class="row">
+      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+        <a class="btn btn-default btn-lg btn-block" href="#previousRoles" role="button">PREVIOUS ROLES</a>
       </div>
-      <div class="row">
-        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-          <a class="btn btn-default btn-lg btn-block" href="#" role="button">PREVIOUS ROLES</a>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+        <a class="btn btn-default btn-lg btn-block" href="#generalInformation" role="button">GENERAL INFORMATION</a>
       </div>
-       <div class="row">
-        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-          <a class="btn btn-default btn-lg btn-block" href="#" role="button">GENERAL INFORMATION</a>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center">
+        <img class="img-responsive flushRight" width="678" src="images/htmlImageSmall.jpg">
       </div>
-     <div class="row">
-        <div class="hidden-xs col-sm-3">
-          <h3>Current Role</h3>
-          <a href="#dataProcessing" id="dataProcessingItem">Data Processing</a>
-          <p id="vdpDocumentSetupItem">VDP Document Setup</p>
-          <p id="edmCampaignsItem">eDM Campaigns</p>
-          <p id="smsCampaignsItem">SMS Campaigns</p>
-          <p id="multichannelCampaignsItem">Multi Channel Campaigns</p>
-        </div>
-        <div class="hidden-xs col-sm-3">
-          <h3>Previous Roles</h3>
-          <p id="technicalDocumentSetupItem">Technical and Long Document Setup</p>
-          <p id="bookDesignItem">Book Design and Production</p>
-          <p id="posDesignItem">Point of Sale Design</p>
-        </div>
-        <div class="col-sm-6 hidden-xs">
-          <h3>General Information</h3>
-          <p>Along with a mature and reliable work ethic, I have excellent communication skills, and am able to work effectively
-            in a team by building and maintaining good relationships. I have a positive and cheerful disposition and I enjoy
-            sharing knowledge and creating documentation to help standardise working practices.</p>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="row" id="dataProcessing">
-        <div class="col-sm-12">
-          <div class="textBackground">
-            <h1>Data Processing</h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <h3 id="currentRole">Current Role</h3>
+        <p> <a href="#dataProcessing" id="dataProcessingLink">Data Processing</a>
+          <p>
             <p>
-              Coming from a pre-press/graphic design background, databases and associated technologies has been an exciting step in a new
-              direction for me. I find that it appeals to the logical side of my nature, and it is very rewarding to program
-              queries that will clean and process large amounts of data very quickly.
+              <a href="#vdpDocumentSetup" id="vdpDocumentSetupLink">VDP Document Setup</a>
             </p>
-            <p>When any of the elements of a DM campaign are to be mailed, the first step is to clean the data so that it complies
-              with NZ Post standards. I import supplied data files into Access where I merge then if necessary and add standard
-              DM fields. I populate the DM fields using using SQL queries which I order and save in case the data is resupplied
-              for any reason. The queries perform tasks such as splitting addresses on commas, checking/flagging overseas
-              records, extracting postcodes, de-duping, processing for SOA, mailcasing, flagging GNA records, splitting out
-              into runs/batches and postcode sorting. Access is a good tool, but for large databases I would prefer to use
-              the power of SQL Server. With this in mind, I'm working towards using C# to create a data processing application
-              which will interface directly with SQL Server and guide the user through the steps necessary to import and
-              standardise data.
+            <p> <a href="#edmCampaigns" id="edmCampaignsLink">eDM Campaigns</a>
             </p>
-          </div>
-        </div>
+            <p> <a href="#smsCampaigns" id="smsCampaignsLink">SMS Campaigns</a>
+            </p>
+            <p> <a href="#multichannelCampaigns" id="multichannelCampaignsLink">Multi Channel Campaigns</a>
+            </p>
       </div>
-    </section>
-    <section id="rest">
-      <div class="col-sm-12">
-        <h2>Indesign page layout</h2>
-        I can lay out any type of digital or print artwork quickly, accurately and to budget. I ensure consistency, especially in
-        complex layouts, and I have an experienced eye for spelling and grammar. I love using Indesign and the Creative Suite,
-        and enjoy using my experience to produce great-looking artwork.
-        <h3>Point of sale and advertising</h3>
-        I have experience in producing marketing and publicity material for publishers, using Photoshop for image merging, masking
-        and adjustment, and HTML and CSS for web-based advertising.
-        <h3>Mac systems maintenance and troubleshooting</h3>
-        Ensuring the smooth running of a Mac network requires organised and efficient working practices. I have experience of font
-        and application troubleshooting, as well as hardware setup and maintenance.
-        <h3>Pre-press and digital</h3>
-        I have plenty of experience in the commercial pre-press and digital environments, a mature and reliable work ethic, and a
-        passion for producing great books in a collaborative working environment. Dear Sir or Madam, I’m writing in response
-        to your advertisement for a technical documents graphic designer. I am experienced in the production of technical
-        documentation – many of the publications that I have produced have been educational and scientific – so I am used
-        to dealing with complex layouts. I am enthusiastic about producing functional, well-organised and documented print-ready
-        files, and I have good experience in managing workflow. I’m used to dealing with supplied files and with templates,
-        so I’m able to quickly understand the structure of existing documents. Along with a mature and reliable work ethic,
-        I have excellent written and verbal English, so I’m able to work effectively in a team by building and maintaining
-        good relationships. I can bring an experienced eye for spelling, grammar and layout, I respond well to ideas and
-        feedback, and am always keen to learn new techniques. I have plenty of layout experience to deadlines and strong
-        pre-press and Mac troubleshooting skills.
-        <h1>Key strengths</h1>
-        <ul>
-          <li>Indesign page layout – academic / books / catalogues </li>
-          <li>Photoshop image manipulation / clear-cutting</li>
-          <li>Mac system maintenance and troubleshooting</li>
-        </ul>
-        <h1>Other skills</h1>
-        <ul>
-          <li>Illustrator</li>
-          <li>Dreamweaver</li>
-          <li>Flash</li>
-          <li>Microsoft Office</li>
-        </ul>
-        I have a good understanding of the difference between designing for print and for web, of image resolution and of HTML and
-        CSS.
-        <h1>Personal Qualities</h1>
-        <ul>
-          <li>Reliable and punctual</li>
-          <li>Good communicator</li>
-          <li>Able to build good relationships</li>
-        </ul>
-        <h4>General information</h4>
-        I’m reliable, and I take the opportunity to learn new skills whenever possible. I’m able to communicate effectively with
-        all stakeholders, and I have a positive and cheerful nature. I take the time to listen to others, and find it easy
-        to work either in a team or autonomously. I can offer over 30 years’ experience of working in a commercial prepress
-        environment, and I can provide personal and professional references.
-        <h1>Employment history</h1>
-        <h3>Freelance, Auckland <small>1999–present</small></h3>
-        <p><strong>Responsibilities:</strong> Design and page layout of books, catalogues and advertising; setup and maintenance
-          of automation tools and templates; design and layout of web graphics; building relationships with clients and suppliers;
-          Mac network setup, troubleshooting and maintenance; database design; backup and archive strategies.</p>
-        <p>Contract work on-site at Anne Geddes, Hachette NZ Ltd and Microdot (Property Press).</p>
-        <p><strong>Software:</strong> InDesign, Illustrator, Photoshop, Acrobat, Filemaker, Retrospect, Dreamweaver, Flash.</p>
-        <h3>PPS Group, Auckland <small>1997–1999</small></h3>
-        <p><strong>Responsibilities:</strong> Checking, trapping and output of film for flexo platemaking from supplied packaging
-          artwork; Mac network troubleshooting and maintenance; backup and archive strategies.</p>
-        <p><strong>Software:</strong> ArtPro, Illustrator, Freehand, Photoshop, Retrospect, Appleshare IP Server. </p>
-        <h3>Unigraph Limited, Bristol UK <small>1992–1997</small></h3>
-        <p><strong>Responsibilities:</strong> Page layout of advertising material including brochures, application forms and
-          catalogues; Mac network troubleshooting and maintenance; backup and archive strategies.</p>
-        <p><strong>Software:</strong> QuarkXpress, Illustrator, Photoshop, Retrospect, Appleshare IP Server.</p>
+      <div class="col-xs-12 col-sm-3">
+        <h3 id="previousRoles">Previous Roles</h3>
+        <p><a href="#technicalDocumentSetup" id="#technicalDocumentSetupLink">Technical and Long Document Setup</a></p>
+        <p><a href="#bookDesign" id="#bookDesignLink">Book Design and Production</a></p>
+        <p><a href="#posDesign" id="#posDesignLink">Point of Sale Design</a></p>
       </div>
-      <!--col-xs-12-->
-    </section>
-  </div>
-  <!--container-->
+      <div class="col-xs-12 col-sm-6">
+        <h3 id="generalInformation">General Information</h3>
+        <p>Along with a mature and reliable work ethic, I have excellent communication skills, and am able to work effectively
+          in a team by building and maintaining good relationships. I have a positive and cheerful disposition and I enjoy
+          sharing knowledge and creating documentation to help standardise working practices.</p>
+
+      </div>
+    </div>
+    <!--container-->
 </body>
 
 </html>

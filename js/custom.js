@@ -1,7 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
 	"use strict";
-//	$("#dataProcessing").hide();
 	$("#rest").hide();
 	$(".returnToKeySkills").hide();
 	$("#dataProcessingItem").click(function(){

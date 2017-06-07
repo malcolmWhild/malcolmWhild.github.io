@@ -1,5 +1,13 @@
+@font-face {
+	font-family : "Stag Sans Light";
+	font-style : normal;
+	font-weight : normal;
+	src:url(../fonts/Stag-Sans-Light.otf);
+}
+
 body {
 	font-size: 1.5em;
+	font-family: "stag sans light";
 }
 
 #bannerContainer {
@@ -67,6 +75,10 @@ h3 {
 	background-color: #e5901a;
 	color: #FFFFFF;
 	text-shadow: none;
+}
+.btn:hover {
+background-color: #5f9ea0;
+color: #FFFFFF;
 }
 
 #navRow ul {

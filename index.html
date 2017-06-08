@@ -12,106 +12,71 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/custom.css" />
   <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/custom.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <div class="row" id="bannerContainer">
-      <div class="hidden-xs col-sm-4 col-md-3 hidden-lg flushLeft">
-        <img class="img-responsive" src="images/profilePic2.jpg">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid" id="mainNavbar">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <h1>Malcolm Whild</h1>
+          <p>XMPie Multi-channel Developer</p>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Current Role<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Data Processing</a></li>
+                  <li><a href="#">VDP Document Setup</a></li>
+                  <li><a href="#">eDM Campaigns</a></li>
+                   <li><a href="#">Multi-channel Campaigns</a></li>
+                </ul>
+  
+          </li>
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Previous Roles <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Technical and Long Document Setup</a></li>
+                <li><a href="#">Book Design and Production</a></li>
+                <li><a href="#">Point of Sale Design</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
-      <div class="hidden-xs hidden-sm hidden-md col-lg-3 flushLeft">
-        <img class="img-responsive" src="images/profilePic2Large.jpg">
-      </div>
-      <div class="col-sm-8 col-md-9 col-lg-3">
-        <h1>Malcolm Whild</h1>
-        <p><span class="jobTitle">XMPie Multichannel Developer</span></p>
-      </div>
-      <div class="hidden-xs hidden-sm hidden-md col-lg-6 flushRight">
-        <img src="images/htmlImage.jpg" height="278">
-      </div>
-    </div>
-   <div class="row">
+      <!-- /.container-fluid -->
+    </nav>
+    <div class="row">
       <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
         <p>
-          I have three years’ experience using Access, SQL Server, and XMPie, along with
-Litmus, Dreamweaver and InDesign to produce a range of digital and print
-communications. I also use Campaign Monitor for eDM and Modica for SMS
-campaigns.
+          I have three years’ experience using Access, SQL Server, and XMPie, along with Litmus, Dreamweaver and InDesign to produce
+          a range of digital and print communications. I also use Campaign Monitor for eDM and Modica for SMS campaigns.
         </p>
-                <p>
+        <p>
           Along with a mature and reliable work ethic, I have excellent communication skills, and am able to work effectively in a
           team by building and maintaining good relationships. I have a positive and cheerful disposition and I enjoy sharing
           knowledge and creating documentation to help standardise working practices.
         </p>
 
-      </div>
-    </div>
-     <div class="row">
-      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-        <a class="btn btn-default btn-lg btn-block" href="#currentRole" role="button">CURRENT ROLE</a>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-        <a class="btn btn-default btn-lg btn-block" href="#previousRoles" role="button">PREVIOUS ROLES</a>
-      </div>
-    </div>
-<!--    <div class="row">
-      <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-        <a class="btn btn-default btn-lg btn-block" href="#generalInformation" role="button">GENERAL INFORMATION</a>
-      </div>
-    </div>
--->    <div class="row">
       <div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center">
         <img class="img-responsive flushRight" width="678" src="images/htmlImageSmall.jpg">
-      </div>
-    </div>
-    <div class="row" id="navRow">
-      <div class="col-xs-12 col-sm-3">
-        <h3 id="currentRole">Current Role</h3>
-        <ul>
-          <li>
-            <a href="#dataProcessing" id="dataProcessingLink">Data Processing</a>
-          </li>
-          <li>
-            <a href="#vdpDocumentSetup" id="vdpDocumentSetupLink">VDP Document Setup</a>
-          </li>
-          <li>
-            <a href="#edmCampaigns" id="edmCampaignsLink">eDM Campaigns</a>
-          </li>
-          <li>
-            <a href="#smsCampaigns" id="smsCampaignsLink">SMS Campaigns</a>
-          </li>
-          <li>
-            <a href="#multichannelCampaigns" id="multichannelCampaignsLink">Multi Channel Campaigns</a>
-          </li>
-
-        </ul>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <h3 id="previousRoles">Previous Roles</h3>
-        <ul>
-          <li>
-            <a href="#technicalDocumentSetup" id="#technicalDocumentSetupLink">Technical and Long Document Setup</a>
-
-          </li>
-          <li>
-            <a href="#bookDesign" id="#bookDesignLink">Book Design and Production</a>
-          </li>
-          <li>
-            <a href="#posDesign" id="#posDesignLink">Point of Sale Design</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <h3 id="generalInformation">General Information</h3>
-        <p>
-          Along with a mature and reliable work ethic, I have excellent communication skills, and am able to work effectively in a
-          team by building and maintaining good relationships. I have a positive and cheerful disposition and I enjoy sharing
-          knowledge and creating documentation to help standardise working practices.
-        </p>
       </div>
     </div>
     <div class="row">

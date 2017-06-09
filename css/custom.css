@@ -1,23 +1,35 @@
 @font-face {
-	font-family : "Stag Sans Light";
-	font-style : normal;
-	font-weight : normal;
-	src:url(../fonts/Stag-Sans-Light.otf);
+	font-family: "Stag Sans Light";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/Stag-Sans-Light.otf);
 }
 
 body {
 	font-size: 1.5em;
 	font-family: "stag sans light";
-	padding-top:90px;
+	padding-top: 120px;
 }
 
 #mainNavbar {
 	background-color: #5f9ea0;
-	font-size: 16px;
+	font-size: 20px;
 }
 
-.navbar-default .navbar-nav > li > a {
-	color:#FFFFFF;
+.navbar-default .navbar-nav>li>a {
+	color: #FFFFFF;
+}
+
+h1 {
+	color: #FFFFFF;
+}
+
+.navbar-header p {
+	color: #FFFFFF;
+}
+
+.navbar-header button {
+	background-color: #FFFFFF;
 }
 
 #bannerContainer {
@@ -40,7 +52,6 @@ body {
 	align-items: center;
 }
 
-
 #keySkills {
 	background-color: #FFFFFF;
 	padding: 15px;
@@ -54,7 +65,9 @@ a {
 	color: #000000;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
 	text-shadow: #FFFFFF;
 }
 
@@ -90,31 +103,34 @@ h3 {
 	color: #FFFFFF;
 	text-shadow: none;
 }
+
 .btn:hover {
-background-color: #5f9ea0;
-color: #FFFFFF;
+	background-color: #5f9ea0;
+	color: #FFFFFF;
 }
 
 #navRow ul {
 	list-style: none;
-	padding-left:0;
+	padding-left: 0;
 }
 
 .columnTop {
-	margin-top:20px;
+	margin-top: 140px;
 }
+
 
 /* Custom, iPhone Retina */
 
 @media only screen and (min-width: 320px) {
-	body {
-		padding-top:90px;
-	}
-	#bannerContainer, #navRow {
+	#bannerContainer,
+	#navRow {
 		text-align: center;
 	}
 	.btn {
 		margin: 10px 0 10px 0;
+	}
+	.lead {
+		font-size: 18px;
 	}
 }
 
@@ -127,8 +143,17 @@ color: #FFFFFF;
 /* Small Devices, Tablets */
 
 @media only screen and (min-width: 768px) {
-	#bannerContainer, #navRow {
+	#bannerContainer,
+	#navRow {
 		text-align: left;
+	}
+	.navbar-right,
+	.navbar-header button {
+		margin-top: 30px;
+		margin-right: 100px;
+	}
+	.lead {
+		font-size: 21px;
 	}
 }
 

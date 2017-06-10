@@ -6,9 +6,33 @@
 }
 
 body {
-	font-size: 1.5em;
 	font-family: "stag sans light";
-	padding-top: 120px;
+}
+
+#mainHeader,
+.dropdown-menu,
+.dropdown,
+.li:hover {
+	background-color: #5f9ea0;
+}
+
+#mainHeader a {
+	color: #FFFFFF;
+	font-size: 21px;
+}
+
+.navbar-right,
+.navbar-header button {
+	margin-top: 30px;
+	margin-right: 100px;
+}
+
+#mainIntro {
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 24px;
 }
 
 #mainNavbar {
@@ -30,6 +54,10 @@ h1 {
 
 .navbar-header button {
 	background-color: #FFFFFF;
+}
+
+.lead {
+	font-size: 18px;
 }
 
 #bannerContainer {
@@ -63,16 +91,6 @@ a {
 
 #keySkills p:hover {
 	color: #000000;
-}
-
-h1,
-h2,
-h3 {
-	text-shadow: #FFFFFF;
-}
-
-h2 {
-	font-size: 1em;
 }
 
 h3 {
@@ -129,9 +147,6 @@ h3 {
 	.btn {
 		margin: 10px 0 10px 0;
 	}
-	.lead {
-		font-size: 18px;
-	}
 }
 
 
@@ -146,14 +161,6 @@ h3 {
 	#bannerContainer,
 	#navRow {
 		text-align: left;
-	}
-	.navbar-right,
-	.navbar-header button {
-		margin-top: 30px;
-		margin-right: 100px;
-	}
-	.lead {
-		font-size: 21px;
 	}
 }
 

@@ -16,45 +16,32 @@
 
 <body>
   <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid" id="mainNavbar">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-          <h1>Malcolm Whild</h1>
-          <p>XMPie Multi-channel Developer</p>
-        </div>
+<div class="row" id="mainHeader">
+  <div class="col-xs-8">
+    <h1>Malcolm Whild</h1>
+    <h2>XMPie Multichannel Developer</h2>
+  </div>
+  <div class="col-xs-4">
+    <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Skills<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a id="dataProcessingLink" href="#dataProcessing">Data Processing</a></li>
+                    <li><a id="vdpDocumentSetupLink" href="#vdpDocumentSetup">VDP Document Setup</a></li>
+                    <li><a id="edmCampaignsLink" href="#edmCampaigns">eDM Campaigns</a></li>
+                    <li><a id="multichannelCampaignsLink" href="#multichannelCampaigns">Multi-channel Campaigns</a></li>
+                    <li><a id="longDocumentSetupLink" href="#longDocumentSetup">Technical and Long Document Setup</a></li>
+                    <li><a id="bookDesignLink" href="#bookDesign">Book Design and Production</a></li>
+                    <li><a id="posDesignLink" href="#posDesign">Point of Sale Design</a></li>
+                  </ul>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Skills<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a id="dataProcessingLink" href="#dataProcessing">Data Processing</a></li>
-                  <li><a id="vdpDocumentSetupLink" href="#vdpDocumentSetup">VDP Document Setup</a></li>
-                  <li><a id="edmCampaignsLink" href="#edmCampaigns">eDM Campaigns</a></li>
-                   <li><a id="multichannelCampaignsLink" href="#multichannelCampaigns">Multi-channel Campaigns</a></li>
-                 <li><a id="longDocumentSetupLink" href="#longDocumentSetup">Technical and Long Document Setup</a></li>
-                <li><a id="bookDesignLink" href="#bookDesign">Book Design and Production</a></li>
-                <li><a id="posDesignLink" href="#posDesign">Point of Sale Design</a></li>
-               </ul>
-          </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
+  </div>
+</div>
     <div class="row" id="mainIntro">
       <div class="col-xs-12 col-sm-6">
         <p class="lead">
-          I have three years’ experience of data processing, HTML, CSS and Javascript coding to create a range of digital and print communications.
+          I have three years’ experience of data processing, HTML, CSS and Javascript coding to create a range of digital and print
+          communications.
         </p>
         <p class="lead">
           Along with a mature and reliable work ethic, I have excellent communication skills, and am able to work effectively in a
@@ -66,8 +53,6 @@
       <div class="hidden-xs col-sm-6">
         <img class="img-responsive" src="images/htmlImage.jpg">
       </div>
-    </div>
-    <div class="row">
       <div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center">
         <img class="img-responsive" src="images/htmlImageSmall.jpg">
       </div>
@@ -96,7 +81,7 @@
     <div class="row" id="vdpDocumentSetup">
       <div class="col-sm-6">
         <h3>VDP Document Setup<a href="#">
-          <img class="pull-right" src="images/toTopIcon.jpg">
+          <img class="pull-right toTop" src="images/toTopIcon.jpg">
         </a></h3>
         <p>
           I have many years' experience using Indesign and I am enthusiastic about producing functional, well-organised and documented
@@ -109,7 +94,8 @@
         </p>
         <p>
           The processed data is used to create a plan file and any campaign logic is added in uPlan, including ADORs for text placeholders,
-          layer visibility, and barcodes. QLingo logic is used extensively, while Javascript is used for conditional loops and for managing arrays.
+          layer visibility, and barcodes. QLingo logic is used extensively, while Javascript is used for conditional loops
+          and for managing arrays.
         </p>
       </div>
       <div class="hidden-xs col-sm-6">
@@ -119,7 +105,7 @@
     <div class="row" id="edmCampaigns">
       <div class="col-sm-6">
         <h3>eDM Campaigns<a href="#">
-          <img class="pull-right" src="images/toTopIcon.jpg">
+          <img class="pull-right toTop" src="images/toTopIcon.jpg">
         </a></h3>
         <p>
           I use Campaign Monitor for stand-alone eDM campaigns. Campaign Monitor is a quick and efficient tool with good reporting.
@@ -131,7 +117,7 @@
     <div class="row" id="multichannelCampaigns">
       <div class="col-sm-6">
         <h3><a href="#">
-          <img class="pull-right" src="images/toTopIcon.jpg">
+          <img class="pull-right toTop" src="images/toTopIcon.jpg">
         </a>Multi-channel Campaigns</h3>
         <p>
           Multi-channel campaigns are the part of the work that I look forward to most. It is very rewarding to be able to create a
@@ -161,11 +147,11 @@
     </div>
   </div>
   <!--container-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-      <script src="js/custom.js"></script>
-    </body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
 
 </html>

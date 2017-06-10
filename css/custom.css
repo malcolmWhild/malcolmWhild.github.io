@@ -9,14 +9,14 @@ body {
 	font-family: "stag sans light";
 }
 
-#mainHeader,
+#mainHeaderSM, #mainHeaderXS,
 .dropdown-menu,
 .dropdown,
 .li:hover {
 	background-color: #5f9ea0;
 }
 
-#mainHeader a {
+#mainHeaderSM a, #mainHeaderXS a {
 	color: #FFFFFF;
 	font-size: 21px;
 }

@@ -8,9 +8,9 @@ $(document).ready(function () {
 	$("#dataProcessingLink").click(function () {
 		$("#dataProcessing").slideDown(200);
 		$("#mainIntro").slideUp(200);
-	$("#vdpDocumentSetup").hide();
-	$("#edmCampaigns").hide();
-	$("#multichannelCampaigns").hide();
+		$("#vdpDocumentSetup").hide();
+		$("#edmCampaigns").hide();
+		$("#multichannelCampaigns").hide();
 	});
 	$("#vdpDocumentSetupLink").click(function () {
 		$("#vdpDocumentSetup").slideDown(200);
@@ -19,9 +19,22 @@ $(document).ready(function () {
 		$("#edmCampaigns").hide();
 		$("#multichannelCampaigns").hide();
 	});
+	$("#edmCampaignsLink").click(function () {
+		$("#edmCampaigns").slideDown(200);
+		$("#mainIntro").slideUp(200);
+		$("#dataProcessing").hide();
+		$("#vdpDocumentSetup").hide();
+		$("#multichannelCampaigns").hide();
+	});
+	$("#multichannelCampaignsLink").click(function () {
+		$("#multichannelCampaigns").slideDown(200);
+		$("#mainIntro").slideUp(200);
+		$("#dataProcessing").hide();
+		$("#vdpDocumentSetup").hide();
+		$("#edmCampaigns").hide();
+	});
 	$(".toTop").click(function () {
 		$("#mainIntro").slideDown(200);
-		$(".navbar-collapse").hide();
 		$("#dataProcessing").hide();
 		$("#vdpDocumentSetup").hide();
 		$("#edmCampaigns").hide();

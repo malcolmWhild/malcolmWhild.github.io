@@ -5,28 +5,58 @@ $(document).ready(function () {
 	$("#vdpDocumentSetup").hide();
 	$("#edmCampaigns").hide();
 	$("#multichannelCampaigns").hide();
-	$("#dataProcessingLink").click(function () {
+
+	$("#dataProcessingLinkXS").click(function () {
 		$("#dataProcessing").slideDown(200);
 		$("#mainIntro").slideUp(200);
 		$("#vdpDocumentSetup").hide();
 		$("#edmCampaigns").hide();
 		$("#multichannelCampaigns").hide();
 	});
-	$("#vdpDocumentSetupLink").click(function () {
+	$("#vdpDocumentSetupLinkXS").click(function () {
 		$("#vdpDocumentSetup").slideDown(200);
 		$("#mainIntro").slideUp(200);
 		$("#dataProcessing").hide();
 		$("#edmCampaigns").hide();
 		$("#multichannelCampaigns").hide();
 	});
-	$("#edmCampaignsLink").click(function () {
+	$("#edmCampaignsLinkXS").click(function () {
 		$("#edmCampaigns").slideDown(200);
 		$("#mainIntro").slideUp(200);
 		$("#dataProcessing").hide();
 		$("#vdpDocumentSetup").hide();
 		$("#multichannelCampaigns").hide();
 	});
-	$("#multichannelCampaignsLink").click(function () {
+	$("#multichannelCampaignsLinkXS").click(function () {
+		$("#multichannelCampaigns").slideDown(200);
+		$("#mainIntro").slideUp(200);
+		$("#dataProcessing").hide();
+		$("#vdpDocumentSetup").hide();
+		$("#edmCampaigns").hide();
+	});
+
+	$("#dataProcessingLinkSM").click(function () {
+		$("#dataProcessing").slideDown(200);
+		$("#mainIntro").slideUp(200);
+		$("#vdpDocumentSetup").hide();
+		$("#edmCampaigns").hide();
+		$("#multichannelCampaigns").hide();
+	});
+	$("#vdpDocumentSetupLinkSM").click(function () {
+		$("#vdpDocumentSetup").slideDown(200);
+		$("#mainIntro").slideUp(200);
+		$("#dataProcessing").hide();
+		$("#edmCampaigns").hide();
+		$("#multichannelCampaigns").hide();
+	});
+	$("#edmCampaignsLinkSM").click(function () {
+		$("#edmCampaigns").slideDown(200);
+		$("#mainIntro").slideUp(200);
+		$("#dataProcessing").hide();
+		$("#vdpDocumentSetup").hide();
+		$("#multichannelCampaigns").hide();
+	});
+	$("#multichannelCampaignsLinkSM").click(function () {
 		$("#multichannelCampaigns").slideDown(200);
 		$("#mainIntro").slideUp(200);
 		$("#dataProcessing").hide();

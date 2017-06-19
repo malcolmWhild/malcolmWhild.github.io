@@ -1,73 +1,29 @@
 // JavaScript Document
 $(document).ready(function () {
 	"use strict";
-	$("#dataProcessing").hide();
-	$("#vdpDocumentSetup").hide();
-	$("#edmCampaigns").hide();
-	$("#multichannelCampaigns").hide();
+	var mT=200;
+	$("#dataProcessing, #indesignAndVDPDocumentSetup, #multichannelCampaigns").hide();
 
-	$("#dataProcessingLinkXS").click(function () {
-		$("#dataProcessing").slideDown(200);
-		$("#mainIntro").slideUp(200);
-		$("#vdpDocumentSetup").hide();
+	$("#dataProcessingLink").click(function () {
+		$("#dataProcessing").slideDown(mT);
+		$("#mainIntro").slideUp(mT);
+		$("#indesignAndVDPDocumentSetup").hide();
 		$("#edmCampaigns").hide();
 		$("#multichannelCampaigns").hide();
 	});
-	$("#vdpDocumentSetupLinkXS").click(function () {
-		$("#vdpDocumentSetup").slideDown(200);
-		$("#mainIntro").slideUp(200);
+	$("#indesignAndVDPDocumentSetupLink").click(function () {
+		$("#indesignAndVDPDocumentSetup").slideDown(mT);
+		$("#mainIntro").slideUp(mT);
 		$("#dataProcessing").hide();
 		$("#edmCampaigns").hide();
 		$("#multichannelCampaigns").hide();
 	});
-	$("#edmCampaignsLinkXS").click(function () {
-		$("#edmCampaigns").slideDown(200);
-		$("#mainIntro").slideUp(200);
+	$("#multichannelCampaignsLink").click(function () {
+		$("#multichannelCampaigns").slideDown(mT);
+		$("#mainIntro").slideUp(mT);
 		$("#dataProcessing").hide();
-		$("#vdpDocumentSetup").hide();
-		$("#multichannelCampaigns").hide();
-	});
-	$("#multichannelCampaignsLinkXS").click(function () {
-		$("#multichannelCampaigns").slideDown(200);
-		$("#mainIntro").slideUp(200);
-		$("#dataProcessing").hide();
-		$("#vdpDocumentSetup").hide();
+		$("#indesignAndVDPDocumentSetup").hide();
 		$("#edmCampaigns").hide();
 	});
 
-	$("#dataProcessingLinkSM").click(function () {
-		$("#dataProcessing").slideDown(200);
-		$("#mainIntro").slideUp(200);
-		$("#vdpDocumentSetup").hide();
-		$("#edmCampaigns").hide();
-		$("#multichannelCampaigns").hide();
-	});
-	$("#vdpDocumentSetupLinkSM").click(function () {
-		$("#vdpDocumentSetup").slideDown(200);
-		$("#mainIntro").slideUp(200);
-		$("#dataProcessing").hide();
-		$("#edmCampaigns").hide();
-		$("#multichannelCampaigns").hide();
-	});
-	$("#edmCampaignsLinkSM").click(function () {
-		$("#edmCampaigns").slideDown(200);
-		$("#mainIntro").slideUp(200);
-		$("#dataProcessing").hide();
-		$("#vdpDocumentSetup").hide();
-		$("#multichannelCampaigns").hide();
-	});
-	$("#multichannelCampaignsLinkSM").click(function () {
-		$("#multichannelCampaigns").slideDown(200);
-		$("#mainIntro").slideUp(200);
-		$("#dataProcessing").hide();
-		$("#vdpDocumentSetup").hide();
-		$("#edmCampaigns").hide();
-	});
-	$(".toTop").click(function () {
-		$("#mainIntro").slideDown(200);
-		$("#dataProcessing").hide();
-		$("#vdpDocumentSetup").hide();
-		$("#edmCampaigns").hide();
-		$("#multichannelCampaigns").hide();
-	});
 });

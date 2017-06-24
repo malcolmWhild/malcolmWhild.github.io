@@ -10,21 +10,31 @@ body {
 	background-color: #f4f4f4;
 	font-size: 16px;
 }
+.navLink {
+		padding: 10px 0 10px 10px;
+
+}
 
 .container {
 	background-color: #FFFFFF;
 	padding-bottom: 20px;
 }
 
-#mainHeader, .graphicPanel {
+#mainHeader {
 	background-color: #5f9ea0;
 }
 
 .graphicPanel {
-	padding:5px;
-	}
-	
-	#mainHeaderSM a, #mainHeaderXS a {
+	background-color: #e5901a;
+	padding: 5px;
+}
+figcaption {
+	font-size: 13px;
+	padding-top: 10px;
+}
+
+#mainHeaderSM a,
+#mainHeaderXS a {
 	color: #FFFFFF;
 	font-size: 21px;
 }
@@ -41,7 +51,6 @@ h2 {
 	background-color: #5f9ea0;
 	font-size: 20px;
 }
-
 h1 {
 	color: #FFFFFF;
 }
@@ -145,12 +154,19 @@ h3 {
 	.btn {
 		margin: 10px 0 10px 0;
 	}
+	.mobImage,.graphicPanel,figure {
+		display: none;
+	}
 }
 
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 480px) {
+	.mobImage,.graphicPanel,figure {
+		display: block;
+	}
+}
 
 
 /* Small Devices, Tablets */
@@ -167,7 +183,10 @@ h3 {
 
 @media only screen and (min-width: 992px) {
 	body {
-		font-size:18px;
+		font-size: 18px;
+	}
+	h1 {
+		padding-top: 30px;
 	}
 }
 

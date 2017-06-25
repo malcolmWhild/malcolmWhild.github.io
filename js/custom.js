@@ -7,9 +7,10 @@ $(document).ready(function () {
 	$("#dataProcessing, #indesignAndVDPDocumentSetup,#edmCampaigns, #multichannelCampaigns").hide();
 
 	$(".navLink").click(function () {
-		if (viewportWidth < 992) {
+		if (viewportWidth < 767) {
 			$("#mainNav,#mainHeader,#mainIntro").hide();
-		} else {
+		}
+		else {
 			$("#mainIntro").hide();
 		}
 	});

@@ -23,6 +23,9 @@ body {
 #mainHeader {
 	background-color: #5f9ea0;
 }
+#mainHeader a {
+	color: #000000;
+}
 
 .graphicPanel {
 	background-color: #e5901a;
@@ -187,10 +190,19 @@ h3 {
 	}
 	h1 {
 		padding-top: 30px;
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 34px;
 	}
 }
 
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+		h1 {
+		padding-top: 20px;
+	}
+
+}

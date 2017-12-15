@@ -2,20 +2,36 @@
 $(document).ready(function () {
 	"use strict";
 	var mT = 200;
-	var viewportWidth = $(window).width();
+	setOrientationStyles();
 
-	$("#dataProcessing, #indesignAndVDPDocumentSetup,#edmCampaigns, #multichannelCampaigns").hide();
 
-	$(".navLink").click(function () {
-		if (viewportWidth < 767) {
-			$("#mainNav,#mainHeader,#mainIntro").hide();
-		}
-		else {
-			$("#mainIntro").hide();
-		}
+	$(window).on("orientationchange", function (event) {
+		setOrientationStyles();
 	});
 
+	function setOrientationStyles(){
+		var viewportWidth = $(window).width();
+		var viewportHeight = $(window).height();
+			if (viewportWidth > viewportHeight) {
+			$("#frontPage").removeClass("portrait");
+			$("#frontPage").addClass("landscape");
+		} else {
+			$("#frontPage").removeClass("landscape");
+			$("#frontPage").addClass("portrait");
+		}
+	}
 
+	$("#dataProcessing, #indesignAndVDPDocumentSetup,#edmCampaigns, #multichannelCampaigns,#fullName").hide();
+
+	$(".navLink").click(function () {
+		$("#mainHeader,#mainIntro").hide();
+		$('.nav-collapse').collapse('hide');
+	});
+
+	$("#navbarToggle").click(function () {
+		$("#brand").toggle();
+		$("#fullName").toggle();
+	});
 	$("#dataProcessingLink").click(function () {
 		$("#indesignAndVDPDocumentSetup,#edmCampaigns,#multichannelCampaigns").hide();
 		$("#dataProcessing").slideDown(mT);
@@ -33,7 +49,7 @@ $(document).ready(function () {
 		$("#dataProcessing,#indesignAndVDPDocumentSetup,#edmCampaigns").hide();
 	});
 	$(".showTop").click(function () {
-		$("#mainNav,#mainHeader").slideDown(mT);
+		$("#mainNav,#mainHeader").show();
 		$("button").addClass("collapsed");
 		$("#navbar").removeClass("in")
 	})

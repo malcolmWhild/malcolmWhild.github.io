@@ -7,22 +7,65 @@
 
 body {
 	font-family: "stag sans light";
-	background-color: #f4f4f4;
-	font-size: 16px;
-}
-.navLink {
-		padding: 10px 0 10px 10px;
-
+	font-size: 2em;
 }
 
-.container {
-	background-color: #FFFFFF;
+#indexBody {
+	background-color: #5f9ea0;
+  }
+.portrait {
+	padding-top:30%;
+	
+}
+.landscape {
+	padding-top:15%;
+	
+}
+  .v-center {
+	display: flex;
+	flex-direction: column;
+}
+h1 {
+	font-size: 2em;
 	padding-bottom: 20px;
 }
+
+h2 {
+	font-size: 2em;
+	color: #FFFFFF;
+	line-height: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+	#indexBody {
+		padding-top: 250px;
+	}
+}
+
+container {
+	padding-top: 15px;
+}
+
+.navLink {
+	padding: 10px 0 10px 10px;
+}
+
+#brand,
+#fullName {
+	padding: 10px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
+/* .row {
+	padding-bottom: 20px;
+} */
 
 #mainHeader {
 	background-color: #5f9ea0;
 }
+
 #mainHeader a {
 	color: #000000;
 }
@@ -31,6 +74,7 @@ body {
 	background-color: #e5901a;
 	padding: 5px;
 }
+
 figcaption {
 	font-size: 13px;
 	padding-top: 10px;
@@ -46,16 +90,9 @@ figcaption {
 	margin-top: 20px;
 }
 
-h2 {
-	font-size: 24px;
-}
-
 #mainNavbar {
 	background-color: #5f9ea0;
 	font-size: 20px;
-}
-h1 {
-	color: #FFFFFF;
 }
 
 .navbar-header p {
@@ -144,65 +181,4 @@ h3 {
 
 .columnTop {
 	margin-top: 20px;
-}
-
-
-/* Custom, iPhone Retina */
-
-@media only screen and (min-width: 320px) {
-	#bannerContainer,
-	#navRow {
-		text-align: center;
-	}
-	.btn {
-		margin: 10px 0 10px 0;
-	}
-	.mobImage,.graphicPanel,figure {
-		display: none;
-	}
-}
-
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (min-width: 480px) {
-	.mobImage,.graphicPanel,figure {
-		display: block;
-	}
-}
-
-
-/* Small Devices, Tablets */
-
-@media only screen and (min-width: 768px) {
-	#bannerContainer,
-	#navRow {
-		text-align: left;
-	}
-}
-
-
-/* Medium Devices, Desktops */
-
-@media only screen and (min-width: 992px) {
-	body {
-		font-size: 18px;
-	}
-	h1 {
-		padding-top: 30px;
-		font-size: 50px;
-	}
-	h2 {
-		font-size: 34px;
-	}
-}
-
-
-/* Large Devices, Wide Screens */
-
-@media only screen and (min-width: 1200px) {
-		h1 {
-		padding-top: 20px;
-	}
-
 }
